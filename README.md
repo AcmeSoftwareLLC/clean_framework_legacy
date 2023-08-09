@@ -1,5 +1,8 @@
 # Clean Framework
 
+**Note:** This is a legacy version of the [Clean Framework](https://pub.dev/packages/clean_framework). 
+Consider switching to the latest version.
+
 [![pub package](https://img.shields.io/pub/v/clean_framework.svg?include_prereleases)](https://pub.dartlang.org/packages/clean_framework)
 [![licence](https://img.shields.io/badge/licence-BSD-brightgreen.svg)](https://github.com/MattHamburger/clean_framework/blob/master/LICENSE)
 
@@ -21,7 +24,9 @@ an instance of Mockoon running.
 Add this to your package's pubspec.yaml file:
 ```yaml
 dependencies:
-    clean_framework_legacy: ^1.0.0
+  clean_framework_legacy:
+    git:
+      url: https://github.com/AcmeSoftwareLLC/clean_framework_legacy.git
 ```
 
 ### 2. Install it

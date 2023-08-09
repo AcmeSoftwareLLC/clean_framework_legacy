@@ -1,4 +1,6 @@
 # Changelog
+## [1.0.0] Re-Release
+* Release with latest version of dependencies, null safety adn Dart 3 support.
 
 ## [0.5.0] Features
 * We have added a new set of classes to define Features, which will help the developer to hide / change the UI of groups of widgets dynamically. Please take a look at the codelab created on the docs folder to learn how to use the classes.
