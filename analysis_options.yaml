@@ -1,0 +1,31 @@
+analizer:
+  errors:
+    missing_required_param: error
+
+linter:
+  rules:
+    # Errors
+    - avoid_empty_else
+    - control_flow_in_finally
+    - empty_statements
+    - hash_and_equals
+    - test_types_in_equals
+    - throw_in_finally
+    - unrelated_type_equality_checks
+    - valid_regexps
+
+    # Style
+    - annotate_overrides
+    - avoid_init_to_null
+    - avoid_return_types_on_setters
+    - await_only_futures
+    - camel_case_types
+    - empty_catches
+    - empty_constructor_bodies
+    - library_names
+    - library_prefixes
+    - non_constant_identifier_names
+    - prefer_is_not_empty
+    - prefer_single_quotes
+    - type_init_formals
+    #- public_member_api_docs
