@@ -72,11 +72,13 @@ class _PresenterState<B extends Bloc, V extends ViewModel, S extends Screen>
   void _subscribe() {
     widget.getViewModelStream(_bloc).listen(
       (viewModel) {
+        if(!mounted) return;
         widget.onViewModelUpdate(context, _bloc, viewModel);
         _child = widget.buildScreen(context, _bloc, viewModel);
         setState(() {});
       },
       onError: (error, stackTrace) {
+        if(!mounted) return;
         _child = widget.buildErrorScreen(context, error);
         setState(() {});
       },
